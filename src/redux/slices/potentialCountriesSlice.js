@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const potentialCountriesSlice = createSlice({
-    name: "potentialCOuntries",
+    name: "potentialCountries",
     initialState: {
         value: [
             {
                 name: {
-                    common: "This is initialPotential",
+                    common: "America",
                 },
             },
         ],

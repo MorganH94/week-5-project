@@ -7,7 +7,7 @@ const Overview = () => {
     return (
         <div className="stack">
             <h1>{currentDisplay.name.official}</h1>
-            <h2>{currentDisplay.name.common}</h2>
+            <h2>"{currentDisplay.name.common}"</h2>
 
             <table className="overview-table">
                 <tr>
@@ -15,12 +15,12 @@ const Overview = () => {
                     <td>
                         {currentDisplay.borders
                             ? currentDisplay.borders.map((e, i, arr) => {
-                                if (i + 1 === arr.length) {
-                                    return `${e}`;
-                                } else {
-                                    return `${e}, `;
-                                }
-                            })
+                                  if (i + 1 === arr.length) {
+                                      return `${e}`;
+                                  } else {
+                                      return `${e}, `;
+                                  }
+                              })
                             : "N/A"}
                     </td>
                 </tr>

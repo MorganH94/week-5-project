@@ -29,9 +29,9 @@ const Weather = () => {
             })
             .catch(function (error) {
                 console.error(error);
-            })
+            });
     }, []);
-      
+
     return (
         <div>
             <table className="overview-table">
